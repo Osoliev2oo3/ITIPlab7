@@ -1,3 +1,5 @@
+package Lab7;
+
 import java.io.*;
 import java.util.Arrays;
 import java.util.LinkedList;
@@ -65,6 +67,7 @@ public class Crawler {
                 try {
                     // scan for 301 error. scan links in document if the document is correct
                     String redirectLocation = HtmlParser.scanForRedirect(currentPair.getUrl(), in);
+                    //proveraem na 301 oshibku
                     if (redirectLocation != null) {
                         currentPair.setUrl(redirectLocation);
                         linksToSearch.add(currentPair);

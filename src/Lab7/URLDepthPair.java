@@ -1,3 +1,5 @@
+package Lab7;
+
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.LinkedList;
